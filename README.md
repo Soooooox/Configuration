@@ -1,0 +1,2 @@
+# Configuration
+Software's configuration
