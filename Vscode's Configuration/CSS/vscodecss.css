@@ -1,0 +1,132 @@
+@import "vscode_style/code.css";
+@import "vscode_style/head.css";
+@import "vscode_style/list.css";
+@import "vscode_style/table.css";
+@import "vscode_style/blockquote.css";
+@import "vscode_style/html.css";
+:root{
+    /* 主色 */
+    --main-color:#6c63fe;
+    /* 辅助色 */
+    --ancillary-color :#6158e5;
+    /* 底色 */
+    --ground-color:#464452;
+    --ground1-color:#3f3d55;
+    --ground2-color:#2d2d49;
+    /* 背景色 */
+    --background-color:#e6e6e6;
+    /* 提醒色 */ 
+    --reminder-color:#ff6884;
+    /* 阴影颜色 */
+    --shadow-color:#666666be;
+
+    /* 标题内容颜色 h=head*/
+    --h1-color:#6158e5;
+    --h2-color:#6158e5;
+    --h3-color:#6158e5;
+    --h4-color:#6158e5;
+    --h5-color:#464452;
+    --h6-color:#464452;
+    /* 标题框颜色 f=frame*/
+    --h1f-color:#2d2d49;
+    --h2f-color:#3f3d55;
+    --h3f-color:#3f3d55;
+    --h4f-color:#3f3d55;
+    --h5f-color:#464452;
+    --h6f-color:#464452;
+
+    /* 段落颜色 */
+    --p-color:black;
+    /* 写字板背景颜色 */
+    --bodybackground-color: #fdfdfd;
+
+    /* 引用块颜色 bq=blockquote*/
+    --bqbackground-color:#f6f6f6;
+    --bqframe-color:#464452;
+
+    /* 超链接 */
+    --link-color:#ff6685;
+    --linkhover-color:#6c63fe;
+
+    /* 图片 */
+    --imageframe-color:#464452;
+
+    /* 快捷键 */
+    --keybackground-color:#fdfdfd;
+    --keyfont-color:#3f3d55;
+
+    /* 列表 */
+    /* 无序列表 */
+    --ulmarker-color:#2d2d49;
+    --ulfont-color:black;
+    /* 有序列表 */
+    --olmarker-color:#6158e5;
+    --olfont-color:black;
+
+    /* 代码 */
+    /* 行内代码 */
+    --codefont-color:#6158e5;
+    --codebackground-color:#e7eaf1;
+    /* 块级代码 */
+    --prebackground-color:#282a36;
+    --preshadow-color:#6c63fe;
+
+    /* 表格 */
+    --tablefont-color:black;
+    /* 表头颜色 */
+    --thfont-color:#6158e5;
+    --thtop-color:#6158e5;
+    --thside-color:#d0cde1;
+    --thbackground-color:#fdfdfd;
+    /* 表格行内颜色 */
+    --td2n-color:#f1f1f1a2;
+    --tdbackground-color:#fdfdfd;
+    --tdline-color:#d0cde1;
+
+    /* 分割线 */
+    --hr-color:#d0cde1;
+
+    /* 例子 */
+    --exp-color:#464452;
+    --expbackground-color:#e6e6e6;
+
+    /* 字体 */
+    --code-font:"JetBrains";
+    --p-font:"华康手札体W7P";
+
+}
+
+/** 自定义字体 * */
+@font-face{
+    font-family: "华康手札体W7P";
+    src: url("/vscode_style/Font/华康手札体W7P.ttf");
+}
+@font-face {
+    font-family:"Monaco" ;
+    src: url("/vscode_style/Font/Monaco.ttf");
+}
+@font-face {
+    font-family:"JetBrains" ;
+    src: url("/vscode_style/Font/JetBrainsMonoNerdFont-Regular.ttf");
+}
+/* 写字板 */
+body{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: var(--bodybackground-color) !important;
+}
+/* 段落 */
+p{
+    font-family: var(--p-font);
+    font-size: 1.2rem;
+    color: var(--p-color);
+    margin-left:2.2em;
+    line-height: 1.7em; 
+}
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p{ 
+    margin-top: 1.5rem;
+}
