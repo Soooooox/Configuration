@@ -1,0 +1,81 @@
+/* KBD按键样式 */
+kbd{
+    font-family: "monospace";
+    font-size: .8em;
+    color: var(--body-color);
+    background: var(--keybackground-color);
+    border-radius: 5px;
+}
+/** 图片 **/
+img{
+    border:1px solid var(--imageframe-color);
+    max-width: 640px;
+}
+blockquote img{
+    max-width: 590px;
+}
+blockquote blockquote img{
+    max-width: 540px;
+}
+/* 链接 */
+a{
+    color:var(--link-color);
+    font-weight: bold;
+}
+a:hover{
+    color:var(--linkhover-color);
+}
+url{
+    color:var(--link-color);
+    font-weight: bold;
+}
+url:hover{
+    color:var(--linkhover-color);
+}
+/* 公式 */
+.katex{
+    display: inline-block;
+    margin: 2px;
+    font-size: 1.5rem;
+}
+/* 行内公式 */
+/* 公式块 */
+/* .katex-display{
+
+} */
+/* 分割线 */
+hr {
+    border-top: 3px dotted #d0cde1 !important;
+}
+/* 例子 */
+span[alt="exp"] {
+    background-color: var(--expbackground-color);
+    font-size: 1.2rem;
+    color:var(--exp-color);
+}
+span[alt="exp"]::before{
+    content: "例子：";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--exp-color);
+}
+/* 折叠标签 */
+details {
+    color:black;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+details[open] {
+    padding: 0.5em;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+  

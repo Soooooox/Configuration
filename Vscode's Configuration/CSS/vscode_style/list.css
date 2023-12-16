@@ -1,0 +1,50 @@
+/**列表**/
+/*无序列表*/
+/* ul{
+    list-style: "● ";
+}
+ul ul{
+    list-style: "○";
+}
+ul ul ul{
+    list-style: "";
+}
+ul ul ul ul{
+    list-style: "";
+}
+ul ul ul ul ul{
+    list-style: "";
+} */
+ul{
+    font-family: var(--p-font);
+    font-size: 1.2rem;
+    color: var(--ulfont-color);
+    ::marker{
+        color: var(--ulmarker-color) !important;
+    }
+    margin-left: 1.6em;
+}
+/*有序列表*/
+ol p{
+    margin-left:2px !important;
+}
+ol{
+    list-style: decimal;
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+    color:var(--olfont-color);
+    margin-left: 1.6em;
+    ::marker{
+        font-weight:bold ;
+        color:var(--olmarker-color);
+    }
+
+}
+ol ol{
+    list-style: lower-alpha;
+    margin-left:unset !important;
+}
+ol ol ol{
+    list-style: lower-roman;
+    margin-left:unset !important;
+}
